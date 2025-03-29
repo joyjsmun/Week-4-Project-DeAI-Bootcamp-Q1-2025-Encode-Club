@@ -42,15 +42,8 @@ npm run dev
 - Character information extraction
 - Structured output formatting
 
-## Project Structure
-```
-src/
-├── components/
-├── lib/           # RAG pipeline implementation
-└── pages/
-    ├── index.tsx  # Main upload interface
-    └── api/       # Backend endpoints
-```
+## Project Report
+
 
 ## Model Testing
 Capability to test and compare different AI models for:
@@ -59,7 +52,7 @@ Capability to test and compare different AI models for:
 - Context window optimization
 
 ## Contributors
-- GitHub Username (Unique ID)
+- joyjsmun (Unique ID: OFVwFA)
 - Add more contributors...
 
 *This project builds upon our "Story Telling App" developed last week.*
