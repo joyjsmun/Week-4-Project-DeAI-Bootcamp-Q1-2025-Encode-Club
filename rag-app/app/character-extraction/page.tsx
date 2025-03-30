@@ -61,43 +61,43 @@ export default function CharacterExtraction() {
   };
 
   return (
-    <main className="min-h-screen w-screen flex flex-col items-center background-gradient p-4">
+    <main className="min-h-screen w-screen flex flex-col items-center bg-white p-4">
       <div className="w-[90%] lg:w-[60rem] space-y-8">
         <Header />
         
-        <div className="bg-blue-950/70 p-6 rounded-lg backdrop-blur-md shadow-lg border border-blue-400/30">
-          <h2 className="text-2xl font-bold text-white mb-4">Character Extraction</h2>
+        <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300">
+          <h2 className="text-2xl font-bold text-black mb-4">Character Extraction</h2>
           
           <div className="space-y-6">
             <div className="space-y-2">
-              <p className="text-white font-medium">Upload a .txt file containing a book or narrative text:</p>
+              <p className="text-black font-medium">Upload a .txt file containing a book or narrative text:</p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Input
                   type="file"
                   accept=".txt"
                   onChange={handleFileChange}
-                  className="text-white bg-blue-900/50 border-blue-400/50 hover:border-blue-300"
+                  className="text-black bg-gray-100 border-gray-300 hover:border-gray-400"
                 />
-                {fileName && <p className="text-blue-200 text-sm self-center font-medium">{fileName}</p>}
+                {fileName && <p className="text-gray-700 text-sm self-center font-medium">{fileName}</p>}
               </div>
             </div>
             
             <Button 
               onClick={extractCharacters} 
               disabled={!file || isLoading}
-              className="w-full bg-blue-600 hover:bg-blue-500 text-white font-medium"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium"
             >
               {isLoading ? "Extracting..." : "Extract Characters"}
             </Button>
             
-            {error && <p className="text-red-300 bg-red-900/30 p-3 rounded border border-red-500/50">{error}</p>}
+            {error && <p className="text-red-700 bg-red-100 p-3 rounded border border-red-300">{error}</p>}
             
             {characters.length > 0 && (
               <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-white">Extracted Characters:</h3>
+                <h3 className="text-xl font-semibold text-black">Extracted Characters:</h3>
                 <Textarea
                   readOnly
-                  className="min-h-[300px] text-white bg-blue-900/50 border-blue-400/50"
+                  className="min-h-[300px] text-black bg-gray-50 border-gray-300"
                   value={characters.map(char => 
                     `Name: ${char.name}\nDescription: ${char.description}\nPersonality: ${char.personality}\n\n`
                   ).join('')}
@@ -107,7 +107,7 @@ export default function CharacterExtraction() {
             
             <div className="pt-4">
               <Link href="/">
-                <Button variant="outline" className="bg-blue-800/50 text-white hover:bg-blue-700/70 border-blue-500/50">
+                <Button variant="outline" className="bg-white text-blue-700 hover:bg-gray-100 border-blue-600">
                   Back to Home
                 </Button>
               </Link>

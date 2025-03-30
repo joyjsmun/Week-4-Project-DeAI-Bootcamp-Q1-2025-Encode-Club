@@ -5,13 +5,13 @@ import { Button } from "./components/ui/button";
 
 export default function Home() {
   return (
-    <main className="h-screen w-screen flex justify-center items-center background-gradient">
+    <main className="h-screen w-screen flex justify-center items-center bg-white">
       <div className="space-y-2 lg:space-y-10 w-[90%] lg:w-[60rem]">
         <Header />
         <div className="h-[65vh] flex flex-col gap-4">
           <ChatSection />
           <Link href="/character-extraction" className="w-full flex justify-center mt-4">
-            <Button className="bg-blue-600 hover:bg-blue-500 text-white font-bold text-lg py-6 px-8 rounded-lg shadow-lg border-2 border-blue-400 hover:scale-105 transition duration-200 animate-pulse">
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg py-6 px-8 rounded-lg shadow-lg border-2 border-blue-400 hover:scale-105 transition duration-200">
               Go to Character Extraction 📚
             </Button>
           </Link>
