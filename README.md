@@ -25,8 +25,14 @@ A Next.js application that extracts characters from uploaded text files and uses
 ```bash
 git clone https://github.com/your-username/character-extraction-story-generator
 cd character-extraction-story-generator
+cd rag-app
+touch .env
 npm install
 npm run dev
+```
+don't forget to add your API key in the `.env` file.
+```
+OPENAI_API_KEY=REPLACE_WITH_YOUR_OPENAI_API-KEY
 ```
 
 ## Usage
@@ -53,6 +59,7 @@ Capability to test and compare different AI models for:
 
 ## Contributors
 - joyjsmun (Unique ID: OFVwFA)
+- ifanzalukhu97 (Unique ID: S3lFve)
 - Add more contributors...
 
 *This project builds upon our "Story Telling App" developed last week.*

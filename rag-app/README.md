@@ -6,6 +6,11 @@ First, install the dependencies:
 
 ```
 npm install
+touch .env
+```
+don't forget to add your API key in the `.env` file.
+```
+OPENAI_API_KEY=REPLACE_WITH_YOUR_OPENAI_API-KEY
 ```
 
 Second, generate the embeddings of the documents in the `./data` directory:
