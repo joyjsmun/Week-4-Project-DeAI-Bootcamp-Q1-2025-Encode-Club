@@ -6,8 +6,10 @@ import { Button } from "@/app/components/ui/button";
 import { Input } from "@/app/components/ui/input";
 import { Textarea } from "@/app/components/ui/textarea";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function CharacterExtraction() {
+  const router = useRouter();
   const [file, setFile] = useState<File | null>(null);
   const [fileName, setFileName] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -60,6 +62,12 @@ export default function CharacterExtraction() {
     }
   };
 
+  const handleGenerateStory = () => {
+    // Store characters in localStorage for the story generation page
+    localStorage.setItem("extractedCharacters", JSON.stringify(characters));
+    router.push("/story-generation");
+  };
+
   return (
     <main className="min-h-screen w-screen flex flex-col items-center bg-white p-4">
       <div className="w-[90%] lg:w-[60rem] space-y-8">
@@ -102,6 +110,12 @@ export default function CharacterExtraction() {
                     `Name: ${char.name}\nDescription: ${char.description}\nPersonality: ${char.personality}\n\n`
                   ).join('')}
                 />
+                <Button
+                  onClick={handleGenerateStory}
+                  className="w-full bg-green-600 hover:bg-green-700 text-white font-medium"
+                >
+                  Generate Story with These Characters
+                </Button>
               </div>
             )}
             
