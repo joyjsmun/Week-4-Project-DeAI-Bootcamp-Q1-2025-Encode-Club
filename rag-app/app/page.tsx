@@ -10,9 +10,9 @@ export default function Home() {
         <Header />
         <div className="h-[65vh] flex flex-col gap-4">
           <ChatSection />
-          <Link href="/character-extraction" className="w-full flex justify-center">
-            <Button className="bg-blue-600 hover:bg-blue-500 text-white font-medium border border-blue-400/30">
-              Go to Character Extraction
+          <Link href="/character-extraction" className="w-full flex justify-center mt-4">
+            <Button className="bg-blue-600 hover:bg-blue-500 text-white font-bold text-lg py-6 px-8 rounded-lg shadow-lg border-2 border-blue-400 hover:scale-105 transition duration-200 animate-pulse">
+              Go to Character Extraction 📚
             </Button>
           </Link>
         </div>
