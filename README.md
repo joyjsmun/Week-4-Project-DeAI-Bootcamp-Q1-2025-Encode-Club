@@ -49,7 +49,20 @@ OPENAI_API_KEY=REPLACE_WITH_YOUR_OPENAI_API-KEY
 - Structured output formatting
 
 ## Project Report
+When users go to the Character Extraction page, they can upload a text file containing a story.
+The app will then extract characters from the text and display them.
+Users can select characters to use in a new story.
+![Homepage](screenshots/home.png)
 
+![Image 0 - Character Extraction](screenshots/image-0.png)
+![Image 1 - Character Extraction](screenshots/image-1.png)
+
+Users can select characters from the extracted characters and generate a new story.
+They can also input the genre and tone of the story in the story prompt.
+![Image 2 - Select Character](screenshots/image-2.png)
+
+The app will then generate a new story using the selected characters and the user input.
+![Image 3 - Story Generation](screenshots/image-3.png)
 
 ## Model Testing
 Capability to test and compare different AI models for:
@@ -60,6 +73,7 @@ Capability to test and compare different AI models for:
 ## Contributors
 - joyjsmun (Unique ID: OFVwFA)
 - ifanzalukhu97 (Unique ID: S3lFve)
+- nvinnikov (Unique ID: VvZfPu)
 - Add more contributors...
 
 *This project builds upon our "Story Telling App" developed last week.*
